@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.alert-container {
+  margin-top: 20px;
+}
+
+.alert-info {
+  background-color: #17a2b8;
+  color: white;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+}
+
+
+/* Card Container */
+.card {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Image styling */
+.image-section {
+  flex: 1;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form Section */
+.form-section {
+  flex: 2;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+/* Form Styling */
+.form-outline {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-outline input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-outline label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  background-color: #f8f9fa;
+  padding: 0 5px;
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+
+/* Styles for the login form buttons */
+.btn-primary {
+  background-color: #007bff; /* Blue background for the login button */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: none;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-outline-success {
+  border-color: #28a745; /* Green border for the signup button */
+  color: #28a745;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Align buttons in a row and ensure they don't overlap */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Adds space between the buttons */
+}
+
+/* Make the buttons equal width */
+.btn {
+  flex: 1; /* This makes buttons take equal space */
+}
+
+/* Ensuring the form image on the left is responsive */
+.col-lg-4 img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Adjust input field and labels for better readability */
+.form-control {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.form-label {
+  font-size: 16px;
+}
+
+/* Adjust the form body for a cleaner look */
+.card-body {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+

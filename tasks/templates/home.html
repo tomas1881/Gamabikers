@@ -1,0 +1,236 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}  
+
+<div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="{% static 'app/img/r1.png' %}" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left align-self-center">
+                            <h1 class="h1 text-success"><b>Recomenda</b></h1>
+                            <h1 class="h1 text-success"><b>En Deportivas</b></h1>
+                            <h3 class="h2">La yamaha R1 por su versatilidad es catalogada como la mejor esu segmento</h3>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="{% static 'app/img/bmw2.png' %}" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1 text-success"><b>Recomenda</b></h1>
+                            <h1 class="h1 text-success"><b>Para turismo</b></h1>
+                            <h3 class="h2">La BMW-1250 es catalogada como la mejor para viajar gracias a su comodidad.</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="{% static 'app/img/crf.png' %}" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1 text-success"><b>Recomenda</b></h1>
+                            <h1 class="h1 text-success"><b>Enduro</b></h1>
+                            <h3 class="h2">La CRF-450 es catalogada como la mejor para las trochas gracias a su potencia.</h3>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+</div>
+<!-- End Banner Hero -->
+
+
+<!-- Start Categories of The Month -->
+<section class="container py-5">
+    <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1">Top 3 Corredores MotoGP</h1>
+          
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="{% static 'app/img/rossi1.png' %}" class="rounded-circle img-fluid border"></a>
+            <h5 class="text-center mt-3 mb-3">Valentino Rossi</h5>
+            
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="{% static 'app/img/david.png' %}" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">David Alonso</h2>
+            
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="{% static 'app/img/mir.png' %}" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">Joan Mir</h2>
+            
+        </div>
+    </div>
+</section>
+<!-- End Categories of The Month -->
+
+<!-- Start Featured Product -->
+<section class="bg-light">
+    <div class="container py-5">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Compras Directas En Concesionario</h1>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="https://www.incolmotos-yamaha.com.co/">
+                        <img src="{% static 'app/img/yamaha.jpg' %}" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        
+                        <a href="https://www.incolmotos-yamaha.com.co/" class="h2 text-decoration-none text-dark">Comprar</a>
+                        <p class="card-text">
+                            Mundo Yamaha tiene posibilidades para que las personas trabajadoras,
+                            aventureras y tranquilas rueden con las mejores motocicletas.
+                        </p>
+                        <p class="text-muted">Reviews (240k)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="https://www.bmw-motorrad.co/">
+                        <img src="{% static 'app/img/logobmw.jpg' %}" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        
+                        <a href="https://www.bmw-motorrad.co/" class="h2 text-decoration-none text-dark">Comprar</a>
+                        <p class="card-text">
+                            Encuentra tu favorita con nuestra visión general de motos BMW Motorrad. Make life a ride.
+                        </p>
+                        <p class="text-muted">Reviews (418)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="https://motos.honda.com.co/">
+                        <img src="{% static 'app/img/honda.png' %}" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        
+                        <a href="https://motos.honda.com.co/" class="h2 text-decoration-none text-dark">Comprar</a>
+                        <p class="card-text">
+                            Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                        </p>
+                        <p class="text-muted">Reviews (174)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Start Brands -->
+ <section class="bg-light py-5">
+    <div class="container my-4">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Our Brands</h1>
+               
+            </div>
+            <div class="col-lg-9 m-auto tempaltemo-carousel">
+                <div class="row d-flex flex-row">
+                    <!--Controls-->
+                    <div class="col-1 align-self-center">
+                        <a class="h1" href="#multi-item-example" role="button" data-bs-slide="prev">
+                            <i class="text-light fas fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <!--End Controls-->
+
+                    <!--Carousel Wrapper-->
+                    <div class="col">
+                        <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="multi-item-example" data-bs-ride="carousel">
+                            <!--Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-3 p-md-5">
+                                            <a href="#"><img class="img-fluid brand-img" src="{% static 'app/img/logoktm.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <a href="#"><img class="img-fluid brand-img" src="{% static 'app/img/logoyama.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <a href="#"><img class="img-fluid brand-img" src="{% static 'app/img/logobm.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                        <div class="col-3 p-md-5">
+                                            <a href="#"><img class="img-fluid brand-img" src="{% static 'app/img/logohonda.png' %}" alt="Brand Logo"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End First slide-->
+
+                                <!--Second slide-->
+                                
+                                <!--End Second slide-->
+
+                                <!--Third slide-->
+                                
+                                <!--End Third slide-->
+
+                            </div>
+                            <!--End Slides-->
+                        </div>
+                    </div>
+                    <!--End Carousel Wrapper-->
+
+                    <!--Controls-->
+                    <div class="col-1 align-self-center">
+                        <a class="h1" href="#multi-item-example" role="button" data-bs-slide="next">
+                            <i class="text-light fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <!--End Controls-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Brands-->
+
+
+{% endblock %}

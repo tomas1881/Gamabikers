@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMABIKERS</title>
+
+    {% load static %}
+
+    <link rel="apple-touch-icon" href="app/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'app/img/logo.ico' %}">
+
+    
+
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/templatemo.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/style_modal.css' %}">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="{% static 'app/css/fontawesome.min.css' %}">
+<!--
+
+
+    
+
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+<body>
+     <!-- Start Top Nav -->
+     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">Gamabikers@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+    <!--Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul >
+                        <li>
+                            <a href="/" >Home</a>
+                        </li>
+                        <li>
+                            <a href="/tasks">Publicar</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li>
+                            <a href="/login">login</a>
+                        </li>
+                        {% else %}
+                        <li>
+                            <a href="/signup">cerrar</a>
+                        </li>
+                        <li>
+                            <a href="/signin">iniciar</a>
+                        </li>
+                        {% endif %}          
+            
+                    </ul>
+              
+                </div>
+               <span>Usuario | {{ request.user.first_name|default:request.user.username }}</span>
+           
+            </div>
+                
+            </div>
+
+        </div>
+        
+
+    </nav>
+       
+    {% block content %}
+    {% endblock %}
+
+     <!-- Start Script -->
+     <script src="{% static 'app/js/jquery-1.11.0.min.js' %}"></script>
+     <script src="{% static 'app/js/jquery-migrate-1.2.1.min.js' %}"></script>
+     <script src="{% static 'app/js/bootstrap.bundle.min.js' %}"></script>
+     <script src="{% static 'app/js/templatemo.js' %}"></script>
+     <script src="{% static 'app/js/custom.js' %}"></script>
+     <!-- End Script -->
+
+
+    
+
+</body>
+</html>

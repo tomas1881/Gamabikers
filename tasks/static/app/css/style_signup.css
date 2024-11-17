@@ -1,0 +1,135 @@
+/* Contenedor general */
+.container {
+  max-width: 900px; /* Aumentado para hacerlo más espacioso */
+  margin: auto;
+  padding: 50px; /* Más espacio interno */
+}
+
+/* Flex-container para formulario e imagen */
+.flex-container {
+  display: flex;
+  gap: 30px; /* Mayor separación entre imagen y formulario */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Estilo de los contenedores individuales */
+.form-container,
+.image-container {
+  flex: 1;
+  min-width: 300px; /* Asegura que ambos contenedores se adapten bien en pantallas pequeñas */
+}
+
+/* Card de formulario con estilo más llamativo */
+.card {
+  backdrop-filter: blur(15px); /* Efecto de desenfoque más marcado */
+  border-radius: 20px; /* Bordes más redondeados */
+  padding: 40px; /* Más espacio interno para los elementos */
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  width: 100%;
+  max-width: 600px; /* Tarjeta más ancha */
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco más opaco */
+  border: 2px solid #ccc; /* Bordes más claros */
+}
+
+/* Imagen */
+.image-container img {
+  border-radius: 20px; /* Coincide con el diseño de la tarjeta */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo de los inputs */
+.form-container input {
+  width: 100%;
+  padding: 18px; /* Más espacio interno para inputs más grandes */
+  margin: 15px 0; /* Separación más amplia entre inputs */
+  border-radius: 10px; /* Bordes más redondeados */
+  border: 1px solid #ddd;
+  font-size: 18px; /* Texto más grande */
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus input, resaltado de borde verde */
+.form-container input:focus {
+  border-color: #007bff; /* Azul para coincidir con el diseño general */
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Sombra azul */
+}
+
+/* Estilo del botón registrar */
+.btn-register {
+  width: 100%;
+  background-color: #007bff; /* Azul principal */
+  color: white;
+  padding: 16px; /* Más espacio interno para un botón más prominente */
+  border: none;
+  border-radius: 10px;
+  font-size: 20px; /* Texto más grande */
+  cursor: pointer;
+  margin-top: 30px; /* Más separación del botón */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.btn-register:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilo para el título */
+h2.fw-bold {
+  font-size: 32px; /* Título más grande */
+  color: #333;
+  margin-bottom: 40px; /* Más separación con los campos */
+  font-weight: 700;
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+  .flex-container {
+      flex-direction: column;
+  }
+
+  .form-container,
+  .image-container {
+      width: 100%;
+      margin: 0;
+  }
+
+  .card {
+      padding: 30px; 
+  }
+
+  h2.fw-bold {
+      font-size: 26px; /
+  }
+
+  .btn-register {
+      font-size: 18px; 
+      padding: 14px; 
+  }
+}
+
+
+.alert {
+  margin-bottom: 20px; 
+}
+
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: auto;
+  padding: 30px;
+  max-width: 500px;
+}
